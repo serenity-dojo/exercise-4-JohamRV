@@ -4,6 +4,7 @@ public class Dog {
     private String name;
     private String favoriteToy;
     private int age;
+    private boolean isFeed;
 
     public Dog(String name, String favoriteToy, int age) {
         this.name = name;
@@ -37,5 +38,13 @@ public class Dog {
 
     public String makeNoise() {
         return "Woof";
+    }
+
+    public void feed() {
+        this.isFeed = true;
+    }
+
+    public boolean isFeed() {
+        return isFeed;
     }
 }
