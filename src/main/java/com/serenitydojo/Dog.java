@@ -6,6 +6,8 @@ public class Dog {
     private int age;
     private boolean isFeed;
 
+    private final static String DOG_NOISE = "Woof";
+
     public Dog(String name, String favoriteToy, int age) {
         this.name = name;
         this.favoriteToy = favoriteToy;
@@ -37,7 +39,7 @@ public class Dog {
     }
 
     public String makeNoise() {
-        return "Woof";
+        return DOG_NOISE;
     }
 
     public void feed() {
